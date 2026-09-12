@@ -1,0 +1,37 @@
+{
+  "synthetic": true,
+  "start": "2026-01-01",
+  "end": "2026-03-01",
+  "keywords": ["Bedrock", "Claude", "Anthropic"],
+  "accounts": {
+    "111111111111": {
+      "dimensions": [
+        {"DimensionValues": [{"Value": "Amazon Bedrock"}], "NextPageToken": "1"},
+        {"DimensionValues": [{"Value": "Synthetic Claude Service"}, {"Value": "Amazon S3"}]}
+      ],
+      "costs": [
+        {"ResultsByTime": [
+          {"TimePeriod": {"Start": "2026-01-01", "End": "2026-02-01"}, "Estimated": false,
+           "Groups": [{"Keys": ["Amazon Bedrock"], "Metrics": {"UnblendedCost": {"Amount": "10.125", "Unit": "USD"}}}]},
+          {"TimePeriod": {"Start": "2026-02-01", "End": "2026-03-01"}, "Estimated": false,
+           "Groups": [{"Keys": ["Amazon Bedrock"], "Metrics": {"UnblendedCost": {"Amount": "20.25", "Unit": "USD"}}}]}
+        ], "NextPageToken": "1"},
+        {"ResultsByTime": [
+          {"TimePeriod": {"Start": "2026-01-01", "End": "2026-02-01"}, "Estimated": false,
+           "Groups": [{"Keys": ["Synthetic Claude Service"], "Metrics": {"UnblendedCost": {"Amount": "2.375", "Unit": "USD"}}}]},
+          {"TimePeriod": {"Start": "2026-02-01", "End": "2026-03-01"}, "Estimated": true,
+           "Groups": [{"Keys": ["Synthetic Claude Service"], "Metrics": {"UnblendedCost": {"Amount": "4.50", "Unit": "USD"}}}]}
+        ]}
+      ]
+    },
+    "222222222222": {
+      "dimensions": [{"DimensionValues": [{"Value": "Amazon Bedrock"}]}],
+      "costs": [{"ResultsByTime": [
+        {"TimePeriod": {"Start": "2026-01-01", "End": "2026-02-01"}, "Estimated": false,
+         "Groups": [{"Keys": ["Amazon Bedrock"], "Metrics": {"UnblendedCost": {"Amount": "0.00", "Unit": "USD"}}}]},
+        {"TimePeriod": {"Start": "2026-02-01", "End": "2026-03-01"}, "Estimated": false,
+         "Groups": [{"Keys": ["Amazon Bedrock"], "Metrics": {"UnblendedCost": {"Amount": "-1.25", "Unit": "USD"}}}]}
+      ]}]
+    }
+  }
+}
